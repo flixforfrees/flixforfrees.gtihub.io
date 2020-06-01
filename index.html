@@ -12,6 +12,25 @@
 <style>
     @import url(https://fonts.googleapis.com/css?family=Puritan|Cantora+One);
 body{text-align:center;user-select:none;background:url(https://i.pinimg.com/originals/3b/8a/d2/3b8ad2c7b1be2caf24321c852103598a.jpg);background-size:cover;color:white; font-family:sans-serif; font-weight: 800;}
+You can use the CSS3 Linear Gradient property along with your background-image like this:
+
+#landing-wrapper {
+    display:table;
+    width:100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('landingpagepic.jpg');
+    background-position:center top;
+    height:350px;
+}
+Here's a demo:
+
+#landing-wrapper {
+  display: table;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://placehold.it/350x150');
+  background-position: center top;
+  height: 350px;
+  color: white;
+}
 .bigButton {
   display: block;
   width: 200px;
@@ -141,6 +160,7 @@ span{
   </style>
 </head>
 <body oncontextmenu="return false">
+<div id="landing-wrapper"></div>
 <div class="bigButton">
 <div class="iccoo">X</div>
 <div class="cont">
